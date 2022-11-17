@@ -1,0 +1,27 @@
+html {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+}
+
+#chart {
+  width: 95%;
+  border: 5px #111111 solid;
+  border-radius: 5px;
+  transition: transform 0.5s, border 0.5s;
+}
+
+#chart:hover {
+  transform: scale(1.05);
+  border: 5px #666666 solid;
+}
+
+.wrapper {
+  text-align: center;
+}
