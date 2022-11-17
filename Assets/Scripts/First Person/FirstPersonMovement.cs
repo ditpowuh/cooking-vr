@@ -14,6 +14,8 @@ public class FirstPersonMovement : MonoBehaviour {
 
 		FirstPersonCamera fpc;
 
+		[Space]
+		public bool abilityToSprint = true;
 		bool sprinting = false;
 
     void Awake() {
@@ -27,12 +29,17 @@ public class FirstPersonMovement : MonoBehaviour {
     void Update() {
 			movementInput.x = Input.GetAxisRaw("Horizontal");
 			movementInput.y = Input.GetAxisRaw("Vertical");
-			sprinting = Input.GetKey(KeyCode.LeftShift);
-			if (sprinting && rb.velocity.magnitude > 5f) {
-				fpc.SetFOV(62.5f);
+			if (abilityToSprint == true) {
+				sprinting = Input.GetKey(KeyCode.LeftShift);
+				if (sprinting && rb.velocity.magnitude > 5f) {
+					fpc.SetFOV(62.5f);
+				}
+				else {
+					fpc.SetFOV(60f);
+				}
 			}
-			else {
-				fpc.SetFOV(60f);
+			if (Input.GetKey(KeyCode.Escape) && Input.GetKey(KeyCode.Space)) {
+				Application.Quit();
 			}
     }
 

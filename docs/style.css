@@ -22,6 +22,39 @@ a {
   border: 5px #666666 solid;
 }
 
+.button {
+  background-color: #7f7f7f;
+  border-radius: 12.5px;
+  border: 2.5px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.25s;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transform: scale(1.125);
+}
+
+.link {
+  text-decoration: underline;
+  color: #ADD8E6;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #96BBC7;
+}
+
+.link:active {
+  text-decoration: underline;
+  color: #69D2F4;
+}
+
 .wrapper {
   text-align: center;
 }
