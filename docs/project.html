@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,9 +56,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/VR Cooking.loader.js";
       var config = {
-        dataUrl: buildUrl + "/VR Cooking.data.gz",
-        frameworkUrl: buildUrl + "/VR Cooking.framework.js.gz",
-        codeUrl: buildUrl + "/VR Cooking.wasm.gz",
+        dataUrl: buildUrl + "/VR Cooking.data",
+        frameworkUrl: buildUrl + "/VR Cooking.framework.js",
+        codeUrl: buildUrl + "/VR Cooking.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Ditpowuh",
         productName: "Cooking Simulator VR",
@@ -82,7 +82,7 @@
       }
       else {
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
       canvas.style.background = "url('" + buildUrl + "/VR Cooking.jpg') center / cover";
       loadingBar.style.display = "block";
