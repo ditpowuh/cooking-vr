@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstPersonMovement : MonoBehaviour {
 
@@ -40,6 +41,9 @@ public class FirstPersonMovement : MonoBehaviour {
 			}
 			if (Input.GetKey(KeyCode.Escape) && Input.GetKey(KeyCode.Space)) {
 				Application.Quit();
+			}
+			if (Input.GetKeyDown(KeyCode.R)) {
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			}
     }
 

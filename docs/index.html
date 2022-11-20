@@ -2,36 +2,45 @@
 <html>
   <head>
     <title>Our VR Project</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Exploding Head.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <br>
+    <div id="navigationbar" class="wrapper">
+      <a href="javascript:void(0);">Home Page</a>
+      ~
+      <a href="ganttchart.html">Gantt Chart</a>
+      ~
+      <a href="evaluation.html">Evaluation</a>
+      ~
+      <a href="web.html">Web Build</a>
+    </div>
     <div class="wrapper">
-      <h1>Trevor's & Jonathan's VR Project</h1>
-      <h2><i>Prototype of A Cooking Simulator</i></h2>
+      <br><br><br>
+      <h1>Trevor's & Jonathan's VR Project*</h1>
+      <h2><i>A Prototype of A Cooking Simulator</i> <img src="Cooking Pan.png" width=20 style="transform: scaleX(-1);"></h2>
+      <h5>*currently cannot connect to virtual reality despite the name</h5>
       <a class="link" href="https://github.com/ditpowuh/cooking-vr" target="_blank">Source Code</a>
       <p>
         <strong>Controls:</strong>
+        <br>
+        Mouse - Look Around
         <br>
         W, A, S, D - Movement
         <br>
         Left Control - Crouch
         <br>
         Escape + Spacebar - Close/Quit
-      </p>
-      <h6>playable demonstration avaliable</h6>
-      <button class="button" onclick="window.open('project.html', '_blank')">Open Playable Web Build</button>
-      <br><br><br><br><br><br><br><br><br><br>
-      <h2>Our Gantt Chart</h2>
-      <h6>
-        for the best view of the gantt chart, please see on desktop or laptop
         <br>
-        click on chart for full image
-      </h6>
-      <a href="Gantt Chart.png" target="_blank"><img id="chart" src="Gantt Chart.png"></a>
+        R - Reload/Reset Scene
+      </p>
+      <h6>playable demonstration avaliable - web build may be more unstable than windows build<br>both options will not work not on mobile devices</h6>
+      <button class="button" onclick="window.open('project.html', '_blank')">Download Windows Build<br>(Recommended)</button>
+      <br>
+      <button class="button" onclick="window.open('web.html', '_blank')">Open Playable Web Build</button>
+      <br><br><br>
+      <h5>for the rest of the project, see the navigation bar at the top</h5>
     </div>
   </body>
 </html>
